@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Educational Poster</title>
+  <style>
+    body {
+      background: #F2F6FC;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .poster {
+      max-width: 600px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(45,156,219,0.12);
+      padding: 40px 32px;
+      text-align: center;
+      /* Background image added below */
+      background-image: url('https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=600&q=80');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      /* Add a semi-transparent overlay for readability */
+      position: relative;
+      z-index: 1;
+    }
+    .poster::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(255,255,255,0.85);
+      border-radius: 18px;
+      z-index: -1;
+    }
+    .poster h1 {
+      color: #2D9CDB;
+      font-size: 2.5em;
+      margin-bottom: 0.2em;
+      font-weight: bold;
+    }
+    .poster h2 {
+      color: #27AE60;
+      font-size: 1.3em;
+      font-style: italic;
+      margin-top: 0;
+      margin-bottom: 1.2em;
+    }
+    .poster ul {
+      text-align: left;
+      margin: 0 auto 2em auto;
+      padding-left: 1.2em;
+      max-width: 400px;
+      font-size: 1.1em;
+      color: #222;
+    }
+    .poster ul li {
+      margin-bottom: 0.7em;
+    }
+    .poster .quote {
+      color: #7B7B7B;
+      font-style: italic;
+      font-size: 1em;
+      margin-top: 2em;
+    }
+    .poster .author {
+      color: #7B7B7B;
+      font-size: 1em;
+      margin-top: 0.5em;
+    }
+  </style>
+</head>
+<body>
+  <div class="poster">
+    <h1>Unlock Your Potential!</h1>
+    <h2>Education is the key to success</h2>
+    <ul>
+      <li>Attend classes regularly</li>
+      <li>Ask questions and stay curious</li>
+      <li>Read every day</li>
+      <li>Practice what you learn</li>
+      <li>Help others and share knowledge</li>
+    </ul>
+    <div class="quote">
+      “Education is the most powerful weapon which you can use to change the world.”
+    </div>
+    <div class="author">
+      — Nelson Mandela
+    </div>
+  </div>
+</body>
+</html>
